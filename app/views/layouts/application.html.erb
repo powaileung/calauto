@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calauto</title>
+    <title>California Auto Center</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="row">
+      <div class="col-3">
+        LOGO
+      </div>
+      <div class="col-4">
+        California Auto Center at City of Millbrae CA is a Complete Auto Mechanic Repair & Tire Service Shop since 2013
+      </div>
+      <div class="col-5">
+        <%= link_to 'Home', '#' %>
+        <%= link_to 'Coupons', '#' %>
+        <%= link_to 'Location', '#' %>
+      </div>
+    </header>
+
+    <br class="clear" />
+
     <%= yield %>
   </body>
 </html>
